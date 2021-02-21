@@ -4,21 +4,6 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
-    },
-    {
-      "title": "title",
-      "author": "auth",
-      "id": 2
-    },
-    {
-      "title": "title",
-      "author": "auth",
-      "id": 3
-    },
-    {
-      "title": "title",
-      "author": "auth",
-      "id": 4
     }
   ],
   "comments": [
