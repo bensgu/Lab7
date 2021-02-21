@@ -94,7 +94,7 @@
             fetch(endpoint)
                 .then(
                     function(response){
-                        if (response.status !== 200) {
+                        if (response.status >= 400) {
                             output.innerHTML = 'Error: ' + response.status;
                         } else {
                             response.json().then(function(data){
@@ -126,7 +126,7 @@
             fetch(endpoint + '/' + id)
                 .then(
                     function(response){
-                        if (response.status !== 200) {
+                        if (response.status >= 400) {
                             output.innerHTML = 'Error: ' + response.status;
                         } else {
                             response.json().then(function(data){
@@ -170,7 +170,7 @@
                 })
                     .then(
                         function(response){
-                            if (response.status !== 200) {
+                            if (response.status >= 400) {
                                 output.innerHTML = 'Error: ' + response.status;
                             } else {
                                 response.json().then(function(data){
@@ -217,7 +217,7 @@
                 })
                     .then(
                         function(response){
-                            if (response.status !== 200) {
+                            if (response.status >= 400) {
                                 output.innerHTML = 'Error: ' + response.status;
                             } else {
                                 response.json().then(function(data){
@@ -259,7 +259,7 @@
                 })
                 .then(
                         function(response){
-                            if (response.status !== 200) {
+                            if (response.status >= 400) {
                                 output.innerHTML = 'Error: ' + response.status;
                             } else {
                                 response.json().then(function(data){
