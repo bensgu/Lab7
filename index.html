@@ -85,6 +85,9 @@
       // the writeup to view the URL pattern for fetch one and fetch all
         function fetchAll() {
             
+            document.getElementById('recordForm').style.display = 'none';
+            document.getElementById('recordIDcontainer').style.display = 'none';
+
             let endpoint = document.getElementById('endpoint').value;
             let output = document.getElementById('output');
 
@@ -111,6 +114,9 @@
       // The main difference from fetchAll() will be the URL you request from; check
       // the writeup to view the URL pattern for fetch one and fetch all
         function fetchOne() {
+
+            document.getElementById('recordForm').style.display = 'none';
+            document.getElementById('recordIDcontainer').style.display = 'none';
         
             let endpoint = document.getElementById('endpoint').value;
             let output = document.getElementById('output');
@@ -141,6 +147,8 @@
       // the writeup to view the URL pattern for create and update
         function createRecord(action) {
         
+            document.getElementById('recordIDcontainer').style.display = 'none';
+
             if (action ==='show') {
                 document.getElementById('recordForm').style.display = 'block';
             } else {
@@ -234,6 +242,9 @@
       // request; check the writeup to view the URL pattern for get one and delete. THERE IS NO 
       // delete all, only delete one.
         function deleteRecord() {
+
+            document.getElementById('recordForm').style.display = 'none';
+            document.getElementById('recordIDcontainer').style.display = 'none';
             
             let endpoint = document.getElementById('endpoint').value;
             let output = document.getElementById('output');
